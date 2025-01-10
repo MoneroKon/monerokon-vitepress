@@ -28,7 +28,7 @@ import CakeWallet from './sponsors/cake.png'
 import Trocador from './sponsors/trocador.svg'
 import Monerica from './sponsors/monerica.svg'
 import Firo from './sponsors/firo.svg'
-import W3PN from './sponsors/w3pn.jpg'
+import W3PN from './sponsors/w3pn.png'
 
 const sponsors = [
     { url: 'https://trocador.app', img: {src: Trocador, alt: 'Trocador' } },
