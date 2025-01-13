@@ -28,6 +28,7 @@ import CakeWallet from './sponsors/cake.png'
 import Trocador from './sponsors/trocador.svg'
 import Monerica from './sponsors/monerica.svg'
 import Firo from './sponsors/firo.svg'
+import LunarDAO from './sponsors/logo_lunardao.png'
 
 const sponsors = [
     { url: 'https://trocador.app', img: {src: Trocador, alt: 'Trocador' } },
@@ -36,6 +37,7 @@ const sponsors = [
     { url: 'https://www.vostoemisio.com', img: {src: VostoEmisio, alt: 'VOSTO EMISIO'} },
     { url: 'https://www.digilol.net', img: {src: Digilol, alt: 'Digilol'} },
     { url: 'https://monerica.com', img: {src: Monerica, alt: 'Monerica'} },
+    { url: 'https://linktr.ee/lunardao', img: {src: LunarDAO, alt: 'LunarDAO'} },
 ]
 </script>
 
