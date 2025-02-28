@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: vitepress-dist
-          path: docs/.vitepress/dist
+          path: .vitepress/dist
           retention-days: 1
 
   # Deployment job
