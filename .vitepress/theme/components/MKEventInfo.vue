@@ -46,6 +46,7 @@ export default {
                         <l-marker :lat-lng="[50.103398, 14.450502]" />
                     </l-map>
                     <p style="margin-top:1em;">Venue address: 475/43, Dělnická, 170 00 Praha 7, Czechia</p>
+                    <small>50°06'12.23"N, 14°27'01.8"E</small>
                 </div>
             </div>
         </div>
