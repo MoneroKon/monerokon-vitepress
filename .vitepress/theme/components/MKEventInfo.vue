@@ -30,7 +30,7 @@ export default {
                         </p>
                         <p><span class="thicc">Date: </span>20th - 22nd June 2O25</p>
                         <p><span class="thicc">Location: </span>Second
-                                Culture / La Fabrika</p>
+                            Culture / La Fabrika</p>
                         <p style="margin-top:1em;">Venue address: 475/43, Dělnická, 170 00 Praha 7, Czechia</p>
                         <small>50°06'12.23"N, 14°27'01.8"E</small>
 

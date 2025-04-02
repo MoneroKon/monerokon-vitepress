@@ -8,17 +8,6 @@ head:
     - name: 'og:image'
       content: https://www.monerokon.org/og.png
 
-#hero:
-#  text: "A technical conference in <b>privacy and financial technology"
-#  image: { dark: mklight-title-logo.svg, light: mkdark-title-logo.svg, alt: 'Monero Konferenco'}
-#  actions:
-#    - theme: brand
-#      text: Buy Tickets
-#      link: 'https://shop.twed.org/twed/MK5'
-#    - theme: alt
-#      text: Submit Talks
-#      link: 'https://cfp.twed.org/mk5/cfp'
-
 markdownStyles: false
 ---
 <script setup>
@@ -51,6 +40,7 @@ import ShopinBitDark from './sponsors/shopinbit-dark.svg'
 import PrivacyGuardians from './community_partners/pg.jpg'
 import W3PN from './community_partners/w3pn.png'
 import LunarDAO from './community_partners/logo_lunardao.png'
+import Monerotopia from './community_partners/monerotopia.png'
 
 const sponsors = [
     { url: 'https://trocador.app', img: {light: TrocadorLight, dark: TrocadorDark, alt: 'Trocador' }, tier: 'hero' },
@@ -68,6 +58,7 @@ const communityPartners = [
     { url: 'https://x.com/privacyguardia', img: {src: PrivacyGuardians, alt: 'Privacy Guardians'} },
     { url: 'https://web3privacy.info', img: {src: W3PN, alt: 'Web3Privacy Now'} },
     { url: 'https://linktr.ee/lunardao', img: {src: LunarDAO, alt: 'LunarDAO'} },
+    { url: 'https://monerotopia.com', img: {src: Monerotopia, alt: 'MoneroTopia'} },
 ]
 </script>
 

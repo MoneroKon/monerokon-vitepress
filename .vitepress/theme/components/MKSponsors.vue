@@ -56,22 +56,70 @@ const filterSponsorsByTier = (sponsors: Sponsor[], tier: string) => {
 </template>
 
 <style scoped>
+.wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col {
+    padding: 1em;
+}
+
+@media (min-width: 960px) {
+    .content {
+        margin: 0 auto;
+        max-width: 1152px;
+    }
+
+    .MKSponsors {
+        padding: 0 64px;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1.3fr;
+        gap: 2em;
+
+    }
+
+    .supporters .inner-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col {
+        height: 12em;
+    }
+}
+
+@media (max-width: 960px) {
+    .MKSponsors {
+        padding: 24px 48px;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .supporters .inner-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+    }
+
+    .supporters .title {
+        margin-bottom: 1em;
+    }
+}
+
 .inner-grid {
     display: grid;
     gap: 1em;
 }
 
-.heroes .inner-grid, .contributors .inner-grid {
+.heroes .inner-grid,
+.contributors .inner-grid {
     grid-template-columns: 1fr 1fr;
-}
-
-.supporters .inner-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.col {
-    height: 12em;
-    padding: 1em;
 }
 
 .heroes {
@@ -79,7 +127,8 @@ const filterSponsorsByTier = (sponsors: Sponsor[], tier: string) => {
     border-radius: 20px;
 }
 
-.contributors, .supporters {
+.contributors,
+.supporters {
     border-radius: 20px;
     border: 1px solid;
 
@@ -92,15 +141,6 @@ const filterSponsorsByTier = (sponsors: Sponsor[], tier: string) => {
 .MKSponsorBtn {
     text-align: center;
     margin-bottom: 2em;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.3fr;
-    gap: 2em;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .content {

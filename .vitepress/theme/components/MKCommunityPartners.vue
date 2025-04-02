@@ -46,7 +46,6 @@ h2 {
   justify-content: center;
   text-align: center;
   gap: 2em;
-  margin-top: 2em;
 }
 
 .partners-grid {
@@ -54,7 +53,7 @@ h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2em;
 }
 
@@ -69,10 +68,11 @@ h2 {
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .community-partners {
     flex-direction: column;
     grid-gap: 2em;
+    margin-top: 3em;
   }
 
   .partner-image {
