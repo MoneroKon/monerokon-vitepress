@@ -2,43 +2,91 @@
 import type { DefaultTheme } from 'vitepress/theme'
 import { VPImage } from 'vitepress/theme'
 import { VPButton } from 'vitepress/theme-without-fonts'
-
-
 export interface Sponsor {
     img: DefaultTheme.ThemeableImage
     url: string
+    tier: string
 }
-
 const props = defineProps<{
     title: string
     sponsors: Sponsor[]
     invite?: boolean
 }>()
+const filterSponsorsByTier = (sponsors: Sponsor[], tier: string) => {
+    return sponsors.filter(item => item.tier === tier);
+}
 </script>
-
 <template>
     <div class="MKSponsors">
         <div class="content">
-            <h2 class="title">{{ title }}</h2>
             <div class="wrapper">
-                <div class="cell sponsor" v-for="item in sponsors">
-                    <a class="link" :href="item.url">
-                        <VPImage class="project-logo" :image="item.img" />
-                    </a>
+                <div class="heroes col">
+                    <h3 class="title">Cypherpunk Heroes</h3>
+                    <div class="inner-grid">
+                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'hero')">
+                            <a :href="item.url">
+                                <VPImage class="hero-image" :image="item.img" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="MKSponsorBtn">
-                <VPButton text="Become a Sponsor" href="/sponsor" />
+                <div class="contributors col">
+                    <h3 class="title">Contributors</h3>
+                    <div class="inner-grid">
+                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'contributor')">
+                            <a :href="item.url">
+                                <VPImage class="hero-image" :image="item.img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="supporters col">
+                    <h3 class="title">Supporters</h3>
+                    <div class="inner-grid">
+                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'supporter')">
+                            <a :href="item.url">
+                                <VPImage class="hero-image" :image="item.img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+.inner-grid {
+    display: grid;
+    gap: 1em;
+}
+
+.heroes .inner-grid, .contributors .inner-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.supporters .inner-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col {
+    height: 12em;
+    padding: 1em;
+}
+
+.heroes {
+    background-color: var(--vp-c-bg-soft);
+    border-radius: 20px;
+}
+
+.contributors, .supporters {
+    border-radius: 20px;
+    border: 1px solid;
+
+}
+
 .title {
     text-align: center;
-    margin-top: 1em;
-
 }
 
 .MKSponsorBtn {
@@ -46,52 +94,18 @@ const props = defineProps<{
     margin-bottom: 2em;
 }
 
-.MKSponsors {
-    background-color: var(--mk-sponsors-bg);
-    color: var(--mk-sponsors-text);
-}
-
 .wrapper {
-    padding: 12px 64px;
     display: grid;
-    grid-template-rows: auto;
-    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    gap: 2em;
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 .content {
-    max-width: 1152px;
     margin: 0 auto;
-}
-
-.sponsor a {
-    aspect-ratio: 1 / 1;
-}
-
-@media (min-width: 960px) {
-    .wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        grid-gap: 3em;
-    }
-
-    .zebutton {
-        margin-left: 3em;
-    }
-}
-
-@media (max-width: 960px) {
-    .wrapper {
-        grid-gap: 1em;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 2.5em;
-    }
-
-    .sponsor a {
-        max-width: 120px;
-    }
+    max-width: 1152px;
 }
 
 .MKSponsors {
@@ -104,8 +118,6 @@ const props = defineProps<{
     justify-content: center;
     text-align: center;
     display: flex;
-    padding: 5px;
-    max-width: 200px;
 }
 
 .cell a {
@@ -119,5 +131,11 @@ h2 {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: -3px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -2px;
 }
 </style>

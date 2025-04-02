@@ -8,6 +8,7 @@ import MKSponsors from './components/MKSponsors.vue'
 import MKEventInfo from './components/MKEventInfo.vue'
 import MKAsideSponsors from './components/MKAsideSponsors.vue'
 import MKCommunityPartners from './components/MKCommunityPartners.vue'
+import MKHero from './components/MKHero.vue'
 
 export default {
   extends: DefaultTheme,
@@ -21,5 +22,6 @@ export default {
     app.component('MKSponsors', MKSponsors)
     app.component('MKEventInfo', MKEventInfo)
     app.component('MKCommunityPartners', MKCommunityPartners)
+    app.component('MKHero', MKHero)
   }
 } satisfies Theme

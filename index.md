@@ -8,44 +8,60 @@ head:
     - name: 'og:image'
       content: https://www.monerokon.org/og.png
 
-hero:
-  text: "A technical conference in <b>privacy and financial technology"
-  image: { dark: mklight-title-logo.svg, light: mkdark-title-logo.svg, alt: 'Monero Konferenco'}
-  actions:
-    - theme: brand
-      text: Buy Tickets
-      link: 'https://shop.twed.org/twed/MK5'
-    - theme: alt
-      text: Submit Talks
-      link: 'https://cfp.twed.org/mk5/cfp'
+#hero:
+#  text: "A technical conference in <b>privacy and financial technology"
+#  image: { dark: mklight-title-logo.svg, light: mkdark-title-logo.svg, alt: 'Monero Konferenco'}
+#  actions:
+#    - theme: brand
+#      text: Buy Tickets
+#      link: 'https://shop.twed.org/twed/MK5'
+#    - theme: alt
+#      text: Submit Talks
+#      link: 'https://cfp.twed.org/mk5/cfp'
 
 markdownStyles: false
 ---
 <script setup>
-import Digilol from './sponsors/digilol.svg'
-import VostoEmisio from './sponsors/vostoemisio.png'
+import DigilolLight from './sponsors/digilol-light.svg'
+import DigilolDark from './sponsors/digilol-dark.svg'
+
+import VostoEmisioLight from './sponsors/vostoemisio-light.png'
+import VostoEmisioDark from './sponsors/vostoemisio-dark.png'
+
 import CakeWallet from './sponsors/cake.png'
-import Trocador from './sponsors/trocador.svg'
-import Monerica from './sponsors/monerica.svg'
-import Firo from './sponsors/firo.svg'
-import Sweetwater from './sponsors/sweetwater.svg'
-import XMRGlobal from './sponsors/xmrglobal.png'
-import ShopinBit from './sponsors/shopinbit.svg'
+
+import TrocadorLight from './sponsors/trocador-light.svg'
+import TrocadorDark from './sponsors/trocador-dark.svg'
+
+import MonericaLight from './sponsors/monerica-light.svg'
+import MonericaDark from './sponsors/monerica-dark.svg'
+
+import FiroLight from './sponsors/firo-light.svg'
+import FiroDark from './sponsors/firo-dark.svg'
+
+import SweetwaterLight from './sponsors/sweetwater-light.svg'
+import SweetwaterDark from './sponsors/sweetwater-dark.svg'
+
+import XMRGlobalLight from './sponsors/xmrglobal-light.png'
+import XMRGlobalDark from './sponsors/xmrglobal-dark.png'
+
+import ShopinBitLight from './sponsors/shopinbit-light.svg'
+import ShopinBitDark from './sponsors/shopinbit-dark.svg'
 
 import PrivacyGuardians from './community_partners/pg.jpg'
 import W3PN from './community_partners/w3pn.png'
 import LunarDAO from './community_partners/logo_lunardao.png'
 
 const sponsors = [
-    { url: 'https://trocador.app', img: {src: Trocador, alt: 'Trocador' } },
-    { url: 'https://cakewallet.com', img: {src: CakeWallet, alt: 'Cake Wallet'} },
-    { url: 'https://firo.org', img: {src: Firo, alt: 'Firo'} },
-    { url: 'https://xmrglobal.io', img: {src: XMRGlobal, alt: 'XMRGlobal'} },
-    { url: 'https://www.vostoemisio.com', img: {src: VostoEmisio, alt: 'VOSTO EMISIO'} },
-    { url: 'https://www.digilol.net', img: {src: Digilol, alt: 'Digilol'} },
-    { url: 'https://monerica.com', img: {src: Monerica, alt: 'Monerica'} },
-    { url: 'https://sweetwater.consulting', img: {src: Sweetwater, alt: 'Sweetwater Digital Asset Consulting'} },
-    { url: 'https://shopinbit.com', img: {src: ShopinBit, alt: 'ShopinBit'} },
+    { url: 'https://trocador.app', img: {light: TrocadorLight, dark: TrocadorDark, alt: 'Trocador' }, tier: 'hero' },
+    { url: 'https://cakewallet.com', img: {src: CakeWallet, alt: 'Cake Wallet'}, tier: 'hero' },
+    { url: 'https://firo.org', img: {light: FiroLight, dark: FiroDark, alt: 'Firo'}, tier: 'contributor' },
+    { url: 'https://xmrglobal.io', img: {light: XMRGlobalLight, dark: XMRGlobalDark, alt: 'XMRGlobal'}, tier: 'contributor' },
+    { url: 'https://www.vostoemisio.com', img: {light: VostoEmisioLight, dark: VostoEmisioDark, alt: 'VOSTO EMISIO'}, tier: 'supporter' },
+    { url: 'https://www.digilol.net', img: {light: DigilolLight, dark: DigilolDark, alt: 'Digilol'}, tier: 'supporter' },
+    { url: 'https://monerica.com', img: {light: MonericaLight, dark: MonericaDark, alt: 'Monerica'}, tier: 'supporter' },
+    { url: 'https://sweetwater.consulting', img: {light: SweetwaterLight, dark: SweetwaterDark, alt: 'Sweetwater Digital Asset Consulting'},tier: 'supporter' },
+    { url: 'https://shopinbit.com', img: {light: ShopinBitLight, dark: ShopinBitDark, alt: 'ShopinBit'},tier: 'supporter' },
 ]
 
 const communityPartners = [
@@ -55,6 +71,8 @@ const communityPartners = [
 ]
 </script>
 
+<MKHero />
 <MKSponsors :sponsors="sponsors" :invite="true" title="Sponsors:" />
-<MKCommunityPartners :partners="communityPartners" />
 <MKEventInfo />
+<MKCommunityPartners :partners="communityPartners" />
+

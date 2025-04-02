@@ -46,7 +46,7 @@ h2 {
   justify-content: center;
   text-align: center;
   gap: 2em;
-  margin: 2em 0;
+  margin-top: 2em;
 }
 
 .partners-grid {
