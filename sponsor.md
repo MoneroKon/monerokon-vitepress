@@ -100,4 +100,4 @@ Email us at [sponsors+community@monerokon.org](mailto:sponsors+community@monerok
 
 ## Disclaimer
 
-T.E. (MoneroKon organizing team) does not endorse, support, or condone the actions, beliefs, or affiliations of its sponsors. T.E. does not assume any liability for their actions, statements, or conduct. If you have any concerns about our sponsorship policies, please contact us at [sponsors@monerokon.org](mailto:sponsors@monerokon.org).
+MoneroKon organizing team does not endorse, support, or condone the actions, beliefs, or affiliations of its sponsors. The organizing team does not assume any liability for their actions, statements, or conduct. If you have any concerns about our sponsorship policies, please contact us at [sponsors@monerokon.org](mailto:sponsors@monerokon.org).

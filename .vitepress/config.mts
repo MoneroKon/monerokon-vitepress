@@ -16,12 +16,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Sponsor', link: '/sponsor' },
       {
-        text: 'Donate', items: [
-          { text: 'Cryptocurrency', link: 'https://trocador.app/anonpay/?ticker_to=usdc&network_to=MATIC&address=0x22942517e3eDEF1e1016070951a7081F99AE50A3&donation=True&simple_mode=True&amount=0.0&name=MoneroKon&description=MoneroKon+donation&email=orga@monerokon.org&ref=DMOXzCgwoG&ticker_from=xmr&network_from=Mainnet&bgcolor=' },
-          { text: 'Card', link: 'https://donate.stripe.com/3cs01M9qtbol396fYY' },
-        ]
-      },
-      {
         text: 'Guides', items: [
           { text: 'Volunteer', link: '/guides/volunteer' },
           { text: 'Press Kit', link: '/guides/press_kit' }
@@ -84,8 +78,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'T.E. z.s., Rybná 716/24, Staré Město, 110 00 Praha 1, Czechia<br>T.E. does not endorse, support, or condone the actions, beliefs, or affiliations of its sponsors.',
-      copyright: 'Copyright © 2026 T.E. z.s.'
+      message: '',
+      copyright: 'Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.'
     },
   }
 })

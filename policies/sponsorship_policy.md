@@ -50,8 +50,8 @@ MoneroKon will respectfully decline sponsorship offers from businesses that:
 8. If the number is negative or 0, company is rejected
 9. The representative informs company of result of the vote.
 10. If company is accepted as a sponsor, sponsorship slots are allocated to companies on a _first come, first served_ basis
-11. T.E. z.s. (a non-profit assocation MoneroKon is using for contracting with the venue and suppliers) will send out an invoice for the selected sponsorship package within 5 business days.
-12. After T.E. z.s. has confirmed the payment of the invoice, the company is added to the MoneroKon website as a sponsor and a public acknowledgement will be tweeted out from @monerokon account.
+11. The MoneroKon organizing team will send out an invoice for the selected sponsorship package within 5 business days.
+12. After the MoneroKon organizing team has confirmed the payment of the invoice, the company is added to the MoneroKon website as a sponsor and a public acknowledgement will be tweeted out from @monerokon account.
 
 ## Sponsor Expulsion
 
@@ -59,4 +59,4 @@ At anytime, if facts or circumstances call in to question the reliability, integ
 
 ## Sponsor Endorsement
 
-T.E. (MoneroKon organizing team) does not endorse, support, or condone the actions, beliefs, or affiliations of its sponsors. T.E. does not assume any liability for their actions, statements, or conduct. If you have any concerns about our sponsorship policies, please contact us at [sponsors@monerokon.org](mailto:sponsors@monerokon.org).
+The MoneroKon organizing team does not endorse, support, or condone the actions, beliefs, or affiliations of its sponsors. The MoneroKon organizing team does not assume any liability for their actions, statements, or conduct. If you have any concerns about our sponsorship policies, please contact us at [sponsors@monerokon.org](mailto:sponsors@monerokon.org).

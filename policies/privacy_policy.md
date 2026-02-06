@@ -16,11 +16,11 @@ footer: false
 
 # MoneroKon Privacy Policy
 
-This Privacy Policy is effective as of **27 January 2024**.
+This Privacy Policy is effective as of **6 February 2026**.
  
 ## 1. Who we are
 
-T.E. Association (“we” or “us”) is a non-profit association, registered in the Czech Republic. We are primarily responsible for the planning, coordination, and production of MoneroKon (https://www.monerokon.org). We are data controllers, as defined by Regulation (EU) 2016/679 (GDPR).
+The MoneroKon organizing team are data controllers, as defined by Regulation (EU) 2016/679 (GDPR).
 
 For further information, we can be contacted at orga+gdpr@monerokon.org. We can also be contacted using the details below.
 
