@@ -62,7 +62,7 @@ To showcase your company or project at MoneroKon 2026, contact us at [sponsors@m
 <td>6 x Free General Admission promotional codes</td>
 </tr>
 <tr>
-<td><s>6</s> 2 available</td>
+<td><s>6</s> 1 available</td>
 <td><s>6</s> 3 available</td>
 <td><s>2</s> 0 available</td>
 </tr>
