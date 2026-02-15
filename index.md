@@ -32,6 +32,7 @@ import WizardSwap from './sponsors/wizardswap.png'
 import Beldex from './sponsors/beldex.svg'
 import CCECash from './sponsors/ccecash.svg'
 import ETZSwap from './sponsors/etz-swap.png'
+import Exolix from './sponsors/exolix.png'
 
 const sponsors = [
     { url: 'https://trocador.app', img: {light: TrocadorLight, dark: TrocadorDark, alt: 'Trocador' }, tier: 'hero' },
@@ -44,6 +45,7 @@ const sponsors = [
     { url: 'https://beldex.io', img: { src: Beldex, alt: 'Beldex' }, tier: 'contributor' },
     { url: 'https://cce.cash', img: { src: CCECash, alt: 'CCE Cash' }, tier: 'contributor' },
     { url: 'https://etz-swap.com', img: { src: ETZSwap, alt: 'ETZ-Swap' }, tier: 'supporter' },
+    { url: 'https://exolix.com', img: { src: Exolix, alt: 'Exolix' }, tier: 'contributor' },
 ]
 
 const communityPartners = [
