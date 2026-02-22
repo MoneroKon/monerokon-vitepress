@@ -33,6 +33,7 @@ import Beldex from './sponsors/beldex.svg'
 import CCECash from './sponsors/ccecash.svg'
 import ETZSwap from './sponsors/etz-swap.png'
 import Exolix from './sponsors/exolix.png'
+import PegasusSwap from './sponsors/pegasusswap.svg'
 
 const sponsors = [
     { url: 'https://trocador.app', img: {light: TrocadorLight, dark: TrocadorDark, alt: 'Trocador' }, tier: 'hero' },
@@ -46,6 +47,7 @@ const sponsors = [
     { url: 'https://cce.cash', img: { src: CCECash, alt: 'CCE Cash' }, tier: 'contributor' },
     { url: 'https://etz-swap.com', img: { src: ETZSwap, alt: 'ETZ-Swap' }, tier: 'supporter' },
     { url: 'https://exolix.com', img: { src: Exolix, alt: 'Exolix' }, tier: 'contributor' },
+    { url: 'https://www.pegasusswap.com', img: { src: PegasusSwap, alt: 'PegasusSwap' }, tier: 'contributor' },
 ]
 
 const communityPartners = [
