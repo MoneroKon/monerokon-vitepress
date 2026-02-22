@@ -109,7 +109,7 @@ const hasTier = (tier: string) => {
     }
 
     .inner-grid {
-        height: 13em;
+        height: 15em;
     }
 
     .no-sponsors {

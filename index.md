@@ -35,6 +35,9 @@ import ETZSwap from './sponsors/etz-swap.png'
 import Exolix from './sponsors/exolix.png'
 import PegasusSwap from './sponsors/pegasusswap.svg'
 
+import LiberationTravelLight from './sponsors/liberationtravel-light.svg'
+import LiberationTravelDark from './sponsors/liberationtravel-dark.svg'
+
 const sponsors = [
     { url: 'https://trocador.app', img: {light: TrocadorLight, dark: TrocadorDark, alt: 'Trocador' }, tier: 'hero' },
     { url: 'https://cakewallet.com', img: {light: CakeWalletLight, dark: CakeWalletDark, alt: 'Cake Wallet'}, tier: 'hero' },
@@ -48,6 +51,7 @@ const sponsors = [
     { url: 'https://etz-swap.com', img: { src: ETZSwap, alt: 'ETZ-Swap' }, tier: 'supporter' },
     { url: 'https://exolix.com', img: { src: Exolix, alt: 'Exolix' }, tier: 'contributor' },
     { url: 'https://www.pegasusswap.com', img: { src: PegasusSwap, alt: 'PegasusSwap' }, tier: 'contributor' },
+    { url: 'https://liberation.travel', img: {light: LiberationTravelLight, dark: LiberationTravelDark, alt: 'Liberation Travel'}, tier: 'contributor' },
 ]
 
 const communityPartners = [
