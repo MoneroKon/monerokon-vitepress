@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import type { DefaultTheme } from 'vitepress/theme'
 import { VPImage } from 'vitepress/theme'
-import { VPButton } from 'vitepress/theme-without-fonts'
 export interface Sponsor {
     img: DefaultTheme.ThemeableImage
     url: string
     tier: string
 }
 const props = defineProps<{
-    title: string
     sponsors: Sponsor[]
-    invite?: boolean
 }>()
 const filterSponsorsByTier = (sponsors: Sponsor[], tier: string) => {
     return sponsors.filter(item => item.tier === tier);
@@ -26,8 +23,8 @@ const hasTier = (tier: string) => {
                 <div class="heroes col">
                     <h3 class="title">Cypherpunk Heroes</h3>
                     <div v-if="hasTier('hero')" class="inner-grid">
-                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'hero')">
-                            <a :href="item.url" :key="item.url">
+                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'hero')" :key="item.url">
+                            <a :href="item.url">
                                 <VPImage class="sponsor-logo" :image="item.img" />
                             </a>
                         </div>
@@ -39,8 +36,9 @@ const hasTier = (tier: string) => {
                 <div class="contributors col">
                     <h3 class="title">Contributors</h3>
                     <div v-if="hasTier('contributor')" class="inner-grid">
-                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'contributor')">
-                            <a :href="item.url" :key="item.url">
+                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'contributor')"
+                            :key="item.url">
+                            <a :href="item.url">
                                 <VPImage class="sponsor-logo" :image="item.img" />
                             </a>
                         </div>
@@ -52,8 +50,9 @@ const hasTier = (tier: string) => {
                 <div class="supporters col">
                     <h3 class="title">Supporters</h3>
                     <div v-if="hasTier('supporter')" class="inner-grid">
-                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'supporter')">
-                            <a :href="item.url" :key="item.url">
+                        <div class="cell" v-for="item in filterSponsorsByTier(props.sponsors, 'supporter')"
+                            :key="item.url">
+                            <a :href="item.url">
                                 <VPImage class="sponsor-logo" :image="item.img" />
                             </a>
                         </div>
@@ -68,7 +67,6 @@ const hasTier = (tier: string) => {
 </template>
 
 <style scoped>
-
 .wrapper {
     display: grid;
     align-items: center;
@@ -85,11 +83,6 @@ const hasTier = (tier: string) => {
 }
 
 @media (min-width: 960px) {
-    .content {
-        margin: 0 auto;
-        max-width: 1152px;
-    }
-
     .MKSponsors {
         padding: 0 64px;
     }
@@ -98,6 +91,10 @@ const hasTier = (tier: string) => {
         grid-template-columns: 1fr 1fr 1.3fr;
         gap: 2em;
 
+    }
+
+    .heroes .inner-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .supporters .inner-grid {
@@ -119,7 +116,7 @@ const hasTier = (tier: string) => {
 
 @media (max-width: 960px) {
     .MKSponsors {
-        padding: 24px 48px;
+        padding: 24px 16px;
     }
 
     .wrapper {
@@ -127,9 +124,14 @@ const hasTier = (tier: string) => {
         gap: 1em;
     }
 
+    .heroes .inner-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
     .supporters .inner-grid,
     .contributors .inner-grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1em;
     }
 }
@@ -141,10 +143,6 @@ const hasTier = (tier: string) => {
 
 .heroes .title {
     color: var(--vp-c-brand-1);
-}
-
-.heroes .inner-grid {
-    grid-template-columns: 1fr 1fr;
 }
 
 .heroes {
@@ -166,11 +164,6 @@ const hasTier = (tier: string) => {
 .title {
     text-align: center;
     margin-bottom: 0.5em;
-}
-
-.MKSponsorBtn {
-    text-align: center;
-    margin-bottom: 2em;
 }
 
 .content {
@@ -195,12 +188,6 @@ const hasTier = (tier: string) => {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: -3px;
 }
 
 h3 {
