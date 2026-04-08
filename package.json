@@ -9,6 +9,6 @@
     "leaflet": "^1.9.4"
   },
   "dependencies": {
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.4"
   }
 }
