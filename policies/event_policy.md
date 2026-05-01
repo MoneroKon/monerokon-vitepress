@@ -27,6 +27,10 @@ The MoneroKon will always be a place where people can enjoy technology and cultu
 
 Ask before snapping, all persons in a photo/video must have explicitly given consent to be photographed/recorded. As such, please avoid taking photos/video of large crowds, audience, or workshop participants.
 
+## Smart Glasses and Wearable Camera Policy
+
+The use of smart glasses equipped with cameras or recording capabilities (including but not limited to Ray-Ban Meta, Oakley Meta, RayNeo Air, and similar devices) is prohibited at MoneroKon events. These devices enable covert recording and are incompatible with the consent-based photo policy all attendees are expected to uphold. Attendees found wearing such devices will be asked to remove them for the duration of the event. Attendees who refuse will be asked to leave the event without ticket refund. This policy applies to all event spaces, including talks, workshops, and social areas.
+
 ## Ticket Refund Policy
 
 All sales are final, no refunds. The 'right of withdrawal' does not apply to contracts for cultural and sporting events scheduled on specific dates.
