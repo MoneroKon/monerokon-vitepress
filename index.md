@@ -14,6 +14,7 @@ markdownStyles: false
 import BFFLight from './community_partners/bff-light.png'
 import BFFDark from './community_partners/bff-dark.png'
 import Monerotopia from './community_partners/monerotopia.png'
+import TWIM from './community_partners/twim-large.svg'
 
 import OrangeFrenLight from './organizers/orangefren-light.png'
 import OrangeFrenDark from './organizers/orangefren-dark.png'
@@ -57,6 +58,7 @@ const sponsors = [
 const communityPartners = [
     { url: 'https://bitcoinfilmfest.com', img: {light: BFFLight, dark: BFFDark}, alt: 'Bitcoin FilmFest' },
     { url: 'https://monerotopia.com', img: { src: Monerotopia }, alt: 'Monerotopia' },
+    { url: 'https://cyphergoat.com/this-week-in-monero', img: { src: TWIM }, alt: 'This Week in Monero' },
 ]
 
 const organizer = {
