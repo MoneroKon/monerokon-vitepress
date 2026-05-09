@@ -34,6 +34,7 @@ import CCECash from './sponsors/ccecash.svg'
 import ETZSwap from './sponsors/etz-swap.png'
 import Exolix from './sponsors/exolix.png'
 import PegasusSwap from './sponsors/pegasusswap.svg'
+import StealthEX from './sponsors/stealthex.svg'
 
 import LiberationTravelLight from './sponsors/liberationtravel-light.svg'
 import LiberationTravelDark from './sponsors/liberationtravel-dark.svg'
@@ -45,6 +46,7 @@ const sponsors = [
     { url: 'https://kycnot.me', img: { src: KycNotMe, alt: 'KYCNot.me' }, tier: 'supporter' },
     { url: 'https://monerica.com', img: { src: Monerica, alt: 'Monerica' }, tier: 'supporter' },
     { url: 'https://xchange.me', img: { src: Xchangeme, alt: 'Xchange.me' }, tier: 'supporter' },
+    { url: 'https://stealthex.io', img: { src: StealthEX, alt: 'StealthEX.io' }, tier: 'supporter' },
     { url: 'https://wizardswap.io', img: { src: WizardSwap, alt: 'WizardSwap' }, tier: 'contributor' },
     { url: 'https://beldex.io', img: { src: Beldex, alt: 'Beldex' }, tier: 'contributor' },
     { url: 'https://cce.cash', img: { src: CCECash, alt: 'CCE Cash' }, tier: 'contributor' },
@@ -61,7 +63,7 @@ const communityPartners = [
 
 const organizer = {
   url: 'https://orangefren.com',
-  img: { light: OrangeFrenLight, dark: OrangeFrenDark, alt: 'Orange Fren' },
+  img: { light: OrangeFrenLight, dark: OrangeFrenDark, alt: 'OrangeFren' },
 }
 </script>
 
