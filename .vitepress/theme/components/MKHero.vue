@@ -18,7 +18,7 @@ const logo = { dark: "/mklight-title-logo.svg", light: "/mkdark-title-logo.svg",
                         <!--<VPButton theme="alt" text="Submit Talks" href="https://cfp.twed.org/mk6/cfp"></VPButton>-->
                         <!--<VPButton theme="sponsor" text="Sponsor" href="/sponsor"></VPButton>-->
                         <VPButton theme="alt" text="View Schedule" href="https://cfp.twed.org/mk6/schedule/"></VPButton>
-                        <!--<VPButton theme="sponsor" text="Live Stream" href="https://www.youtube.com/@MoneroCommunityWorkgroup/live"></VPButton>-->
+                        <VPButton theme="sponsor" text="Live Stream" href="https://www.youtube.com/@MoneroCommunityWorkgroup/live"></VPButton>
                     </div>
                 </div>
             </div>

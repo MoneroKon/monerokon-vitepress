@@ -29,7 +29,7 @@ export default {
                             in privacy-enhancing technologies and distributed systems.
                         </p>
                         <p><span class="thicc">Date: </span>5th - 7th June 2026</p>
-                        <p><span class="thicc">Schedule: </span><!--<a href="https://schedule.monerokon.org" target="_blank">schedule.monerokon.org</a>-->Coming soon</p>
+                        <p><span class="thicc">Schedule: </span><a href="https://schedule.monerokon.org" target="_blank">schedule.monerokon.org</a></p>
                         <p><span class="thicc">Location: </span>Kinoteka, Palace of Culture and Science, pl. Defilad 1, Warsaw, Poland</p>
                         <small>52°13'53.1"N, 21°00'23.3"E</small>
                     </div>
