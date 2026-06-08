@@ -24,14 +24,14 @@ export default {
                 <div>
                     <div>
                         <p>
-                            Monero Konferenco (“MoneroKon”) is an annual meeting of privacy advocates, cypherpunks,
-                            researchers, and developers and is designed to disseminate scientific and technical results
-                            in privacy-enhancing technologies and distributed systems.
+                            Monero Konferenco (“MoneroKon”) is the annual gathering where privacy advocates, cypherpunks, 
+                            researchers, developers, and creatives unite to exchange ideas, showcase groundbreaking 
+                            research, and advance open, censorship-resistant technologies that empower individual 
+                            autonomy and digital rights.
                         </p>
-                        <p><span class="thicc">Date: </span>5th - 7th June 2026</p>
-                        <p><span class="thicc">Schedule: </span><a href="https://schedule.monerokon.org" target="_blank">schedule.monerokon.org</a></p>
-                        <p><span class="thicc">Location: </span>Kinoteka, Palace of Culture and Science, pl. Defilad 1, Warsaw, Poland</p>
-                        <small>52°13'53.1"N, 21°00'23.3"E</small>
+                        <br>
+                        <p><span class="thicc">Date: </span>TBD</p>
+                        <p><span class="thicc">Location: </span>TBD</p>
                     </div>
                 </div>
                 <div style="min-height: 15em">
@@ -42,11 +42,6 @@ export default {
                         <l-marker :lat-lng="[52.23141325165129, 21.00647994224071]" />
                     </l-map>
                 </div>
-                <!--<div>
-                    <h3 class="title">Volunteers</h3>
-                    <p>We need lots of help to get this community-driven event off the ground, including help with attendee registration, stagehands, and general event support. If you would like to volunteer in some capacity, please check out our
-                        <a href="/guides/volunteer" target="_blank">volunteer guide</a> for more information.</p>
-                </div>-->
             </div>
         </div>
     </div>
