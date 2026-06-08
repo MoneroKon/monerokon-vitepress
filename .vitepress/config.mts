@@ -31,6 +31,7 @@ export default defineConfig({
       },
       {
         text: 'Archive', items: [
+          { text: '2026', link: '/past_events/2026' },
           { text: '2025', link: '/past_events/2025' },
           { text: '2024', link: '/past_events/2024' },
           { text: '2023', link: '/past_events/2023' },
@@ -57,6 +58,7 @@ export default defineConfig({
       },
       {
         text: 'Past Events', items: [
+          { text: '2026', link: '/past_events/2026' },
           { text: '2025', link: '/past_events/2025' },
           { text: '2024', link: '/past_events/2024' },
           { text: '2023', link: '/past_events/2023' },
