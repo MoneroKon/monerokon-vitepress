@@ -1,7 +1,10 @@
 ---
 layout: doc
+prev: false
+next: false
 title: Monero Konferenco 2024 Press Release
 description: Privacy Advocates and Hackers to Gather for Annual Monero Conference & Hackathon in Prague
+date: 2024-11-22
 head:
   - - meta
     - name: 'og:image'

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>MoneroKon Blog</title>
+    <link>https://www.monerokon.org/blog/</link>
+    <description>MoneroKon announcements and press releases</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Monero Konferenco 2026 Press Release</title>
+      <link>https://www.monerokon.org/blog/2026/mk26-press-release</link>
+      <guid>https://www.monerokon.org/blog/2026/mk26-press-release</guid>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Privacy Advocates Gather for Annual Monero Conference in Warsaw</description>
+    </item>
+    <item>
+      <title>Monero Konferenco 2025 Press Release</title>
+      <link>https://www.monerokon.org/blog/2025/mk25-press-release</link>
+      <guid>https://www.monerokon.org/blog/2025/mk25-press-release</guid>
+      <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
+      <description>Privacy Advocates Gather for Annual Monero Conference in Prague</description>
+    </item>
+    <item>
+      <title>Monero Konferenco 2024 Press Release</title>
+      <link>https://www.monerokon.org/blog/2024/mk24-press-release</link>
+      <guid>https://www.monerokon.org/blog/2024/mk24-press-release</guid>
+      <pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate>
+      <description>Privacy Advocates and Hackers to Gather for Annual Monero Conference &amp; Hackathon in Prague</description>
+    </item>
+  </channel>
+</rss>

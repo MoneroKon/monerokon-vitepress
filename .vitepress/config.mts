@@ -24,6 +24,7 @@ export default defineConfig({
           { text: 'XMPP', link: 'xmpp:monerokon@muc.xmpp.is?join' },
           { text: 'Simplex', link: 'https://simplex.chat/contact#/?v=1-2&smp=smp%3A%2F%2Fu2dS9sG8nMNURyZwqASV4yROM28Er0luVTx5X1CsMrU%3D%40smp4.simplex.im%2F1OXnPP15cK8HAJ3YM_7UfQhlW-9WFE8P%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAHf0AClqIM2SnOJ7OP06pr7UXlcnzGaBUyx3MLmRP0ko%253D%26srv%3Do5vmywmrnaxalvz6wi3zicyftgio6psuvyniis6gco6bp6ekl4cqj4id.onion&data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%22CIdAO_gOEDOsW9oZrtAHiA%3D%3D%22%7D' },
           { text: 'Mastodon', link: 'https://mas.to/@monerokon' },
+          { text: 'RSS Feed', link: '/blog/rss.xml' },
           { text: 'X', link: 'https://x.com/monerokon' },
         ]
       },
@@ -53,24 +54,12 @@ export default defineConfig({
           { text: '2019', link: '/past_events/2019' },
         ]
       },
-      { text: 'Blog', link: '/blog/mk26-press-release' },
+      { text: 'Blog', link: '/blog/' },
       { text: 'Sponsor', link: '/sponsor' },
     ],
 
     sidebar: [
-      {
-        text: 'Blog', items: [
-          { text: 'MoneroKon26 Press Release', link: '/blog/mk26-press-release' },
-          { text: 'MoneroKon25 Press Release', link: '/blog/mk25-press-release' },
-          { text: 'MoneroKon24 Press Release', link: '/blog/mk24-press-release' },
-        ]
-      },
-      {
-        text: 'Guides', items: [
-          { text: 'Volunteer Guide', link: '/guides/volunteer' },
-          { text: 'Press Kit', link: '/guides/press_kit' }
-        ]
-      },
+      { text: 'Blog', link: '/blog/' },
       {
         text: 'Past Events', items: [
           { text: '2026', link: '/past_events/2026' },
