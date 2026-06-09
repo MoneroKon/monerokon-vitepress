@@ -46,12 +46,12 @@ export default defineConfig({
       },
       {
         text: 'Archive', items: [
-          { text: '2026', link: '/past_events/2026' },
-          { text: '2025', link: '/past_events/2025' },
-          { text: '2024', link: '/past_events/2024' },
-          { text: '2023', link: '/past_events/2023' },
-          { text: '2022', link: '/past_events/2022' },
-          { text: '2019', link: '/past_events/2019' },
+          { text: 'Warsaw 2026', link: '/past_events/2026' },
+          { text: 'Prague 2025', link: '/past_events/2025' },
+          { text: 'Prague 2024', link: '/past_events/2024' },
+          { text: 'Prague 2023', link: '/past_events/2023' },
+          { text: 'Lisbon 2022', link: '/past_events/2022' },
+          { text: 'Denver 2019', link: '/past_events/2019' },
         ]
       },
       { text: 'Blog', link: '/blog/' },
@@ -62,12 +62,12 @@ export default defineConfig({
       { text: 'Blog', link: '/blog/' },
       {
         text: 'Past Events', items: [
-          { text: '2026', link: '/past_events/2026' },
-          { text: '2025', link: '/past_events/2025' },
-          { text: '2024', link: '/past_events/2024' },
-          { text: '2023', link: '/past_events/2023' },
-          { text: '2022', link: '/past_events/2022' },
-          { text: '2019', link: '/past_events/2019' },
+          { text: 'Warsaw 2026', link: '/past_events/2026' },
+          { text: 'Prague 2025', link: '/past_events/2025' },
+          { text: 'Prague 2024', link: '/past_events/2024' },
+          { text: 'Prague 2023', link: '/past_events/2023' },
+          { text: 'Lisbon 2022', link: '/past_events/2022' },
+          { text: 'Denver 2019', link: '/past_events/2019' },
         ]
       }
     ],
