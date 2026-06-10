@@ -1,7 +1,10 @@
 ---
 layout: doc
+prev: false
+next: false
 title: Monero Konferenco 2025 Press Release
 description: Privacy Advocates Gather for Annual Monero Conference in Prague
+date: 2025-02-25
 head:
   - - meta
     - name: 'og:image'

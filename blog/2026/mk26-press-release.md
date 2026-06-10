@@ -1,7 +1,10 @@
 ---
 layout: doc
+prev: false
+next: false
 title: Monero Konferenco 2026 Press Release
 description: Privacy Advocates Gather for Annual Monero Conference in Warsaw
+date: 2026-01-14
 head:
   - - meta
     - name: 'og:image'

@@ -11,14 +11,8 @@ const logo = { dark: "/mklight-title-logo.svg", light: "/mkdark-title-logo.svg",
         <div class="herogrid">
             <div class="container">
                 <div class="info">
-                    <h2 class="hero-text">A technical conference in <span class="bold">privacy and financial
-                            technology</span></h2>
+                    <h2 class="hero-text"><span class="bold">Privacy, Freedom, Decentralisation</span></h2>
                     <div class="hero-btn">
-                        <VPButton text="Buy Tickets" href="https://shop.twed.org/twed/MK6"></VPButton>
-                        <!--<VPButton theme="alt" text="Submit Talks" href="https://cfp.twed.org/mk6/cfp"></VPButton>-->
-                        <!--<VPButton theme="sponsor" text="Sponsor" href="/sponsor"></VPButton>-->
-                        <VPButton theme="alt" text="View Schedule" href="https://cfp.twed.org/mk6/schedule/"></VPButton>
-                        <VPButton theme="sponsor" text="Live Stream" href="https://www.youtube.com/@MoneroCommunityWorkgroup/live"></VPButton>
                     </div>
                 </div>
             </div>
@@ -78,7 +72,7 @@ const logo = { dark: "/mklight-title-logo.svg", light: "/mkdark-title-logo.svg",
 .hero-text {
     font-weight: 100;
     letter-spacing: -4px;
-    font-size: 36px;
+    font-size: 52px;
     line-height: 1;
 }
 

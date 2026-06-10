@@ -14,11 +14,26 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Sponsor', link: '/sponsor' },
       {
-        text: 'Guides', items: [
-          { text: 'Volunteer', link: '/guides/volunteer' },
-          { text: 'Press Kit', link: '/guides/press_kit' }
+        text: 'Community', items: [
+          { text: 'Nextcloud Talk', link: 'https://nextcloud.4lice.com/call/y4iugjt2' },
+          { text: 'Message Board', link: 'https://nextcloud.4lice.com/apps/forum' },
+          { text: 'Volunteer', link: 'https://engel.4lice.com/angeltypes/about' },
+          { text: 'IRC', link: 'https://web.libera.chat/?nick=Guest?#monero-events' },
+          { text: 'Matrix', link: 'https://matrix.to/#/#monerokon:matrix.org' },
+          { text: 'XMPP', link: 'xmpp:monerokon@muc.xmpp.is?join' },
+          { text: 'Simplex', link: 'https://simplex.chat/contact#/?v=1-2&smp=smp%3A%2F%2Fu2dS9sG8nMNURyZwqASV4yROM28Er0luVTx5X1CsMrU%3D%40smp4.simplex.im%2F1OXnPP15cK8HAJ3YM_7UfQhlW-9WFE8P%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAHf0AClqIM2SnOJ7OP06pr7UXlcnzGaBUyx3MLmRP0ko%253D%26srv%3Do5vmywmrnaxalvz6wi3zicyftgio6psuvyniis6gco6bp6ekl4cqj4id.onion&data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%22CIdAO_gOEDOsW9oZrtAHiA%3D%3D%22%7D' },
+          { text: 'Mastodon', link: 'https://mas.to/@monerokon' },
+          { text: 'RSS Feed', link: '/blog/rss.xml' },
+          { text: 'X', link: 'https://x.com/monerokon' },
+        ]
+      },
+      {
+        text: 'Media', items: [
+          { text: 'Odysee', link: 'https://odysee.com/@monerocommunityworkgroup:8?view=content' },
+          { text: 'Podcast', link: 'https://audio.degooglemonero.com/@MoneroKonPodcast' },
+          { text: 'YouTube', link: 'https://www.youtube.com/@MoneroCommunityWorkgroup/videos' },
+          { text: 'Spotify', link: 'https://open.spotify.com/show/0hoXlc3D5HUPM773X20qzw' }
         ]
       },
       {
@@ -31,49 +46,29 @@ export default defineConfig({
       },
       {
         text: 'Archive', items: [
-          { text: '2025', link: '/past_events/2025' },
-          { text: '2024', link: '/past_events/2024' },
-          { text: '2023', link: '/past_events/2023' },
-          { text: '2022', link: '/past_events/2022' },
-          { text: '2019', link: '/past_events/2019' },
+          { text: 'Warsaw 2026', link: '/past_events/2026' },
+          { text: 'Prague 2025', link: '/past_events/2025' },
+          { text: 'Prague 2024', link: '/past_events/2024' },
+          { text: 'Prague 2023', link: '/past_events/2023' },
+          { text: 'Lisbon 2022', link: '/past_events/2022' },
+          { text: 'Denver 2019', link: '/past_events/2019' },
         ]
       },
-      { text: 'Blog', link: '/blog/mk26-press-release' },
+      { text: 'Blog', link: '/blog/' },
+      { text: 'Sponsor', link: '/sponsor' },
     ],
 
     sidebar: [
-      {
-        text: 'Blog', items: [
-          { text: 'MoneroKon26 Press Release', link: '/blog/mk26-press-release' },
-          { text: 'MoneroKon25 Press Release', link: '/blog/mk25-press-release' },
-          { text: 'MoneroKon24 Press Release', link: '/blog/mk24-press-release' },
-        ]
-      },
-      {
-        text: 'Guides', items: [
-          { text: 'Volunteer Guide', link: '/guides/volunteer' },
-          { text: 'Press Kit', link: '/guides/press_kit' }
-        ]
-      },
+      { text: 'Blog', link: '/blog/' },
       {
         text: 'Past Events', items: [
-          { text: '2025', link: '/past_events/2025' },
-          { text: '2024', link: '/past_events/2024' },
-          { text: '2023', link: '/past_events/2023' },
-          { text: '2022', link: '/past_events/2022' },
-          { text: '2019', link: '/past_events/2019' },
+          { text: 'Warsaw 2026', link: '/past_events/2026' },
+          { text: 'Prague 2025', link: '/past_events/2025' },
+          { text: 'Prague 2024', link: '/past_events/2024' },
+          { text: 'Prague 2023', link: '/past_events/2023' },
+          { text: 'Lisbon 2022', link: '/past_events/2022' },
+          { text: 'Denver 2019', link: '/past_events/2019' },
         ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'x', link: 'https://x.com/monerokon' },
-      { icon: 'matrix', link: 'https://matrix.to/#/#monerokon:matrix.org' },
-      {
-        icon: {
-          svg: '<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.51194 3.00541C9.18829 2.54594 10.0435 2.53694 10.6788 2.95419C10.8231 3.04893 10.9771 3.1993 11.389 3.61119C11.8009 4.02307 11.9513 4.17714 12.046 4.32141C12.4633 4.95675 12.4543 5.81192 11.9948 6.48827C11.8899 6.64264 11.7276 6.80811 11.3006 7.23511L10.6819 7.85383C10.4867 8.04909 10.4867 8.36567 10.6819 8.56093C10.8772 8.7562 11.1938 8.7562 11.389 8.56093L12.0077 7.94221L12.0507 7.89929C12.4203 7.52976 12.6568 7.2933 12.822 7.0502C13.4972 6.05623 13.5321 4.76252 12.8819 3.77248C12.7233 3.53102 12.4922 3.30001 12.1408 2.94871L12.0961 2.90408L12.0515 2.85942C11.7002 2.508 11.4692 2.27689 11.2277 2.11832C10.2377 1.46813 8.94398 1.50299 7.95001 2.17822C7.70691 2.34336 7.47044 2.57991 7.1009 2.94955L7.058 2.99247L6.43928 3.61119C6.24401 3.80645 6.24401 4.12303 6.43928 4.31829C6.63454 4.51355 6.95112 4.51355 7.14638 4.31829L7.7651 3.69957C8.1921 3.27257 8.35757 3.11027 8.51194 3.00541ZM4.31796 7.14672C4.51322 6.95146 4.51322 6.63487 4.31796 6.43961C4.12269 6.24435 3.80611 6.24435 3.61085 6.43961L2.99213 7.05833L2.94922 7.10124C2.57957 7.47077 2.34303 7.70724 2.17788 7.95035C1.50265 8.94432 1.4678 10.238 2.11799 11.2281C2.27656 11.4695 2.50766 11.7005 2.8591 12.0518L2.90374 12.0965L2.94837 12.1411C3.29967 12.4925 3.53068 12.7237 3.77214 12.8822C4.76219 13.5324 6.05589 13.4976 7.04986 12.8223C7.29296 12.6572 7.52943 12.4206 7.89896 12.051L7.89897 12.051L7.94188 12.0081L8.5606 11.3894C8.75586 11.1941 8.75586 10.8775 8.5606 10.6823C8.36533 10.487 8.04875 10.487 7.85349 10.6823L7.23477 11.301C6.80777 11.728 6.6423 11.8903 6.48794 11.9951C5.81158 12.4546 4.95642 12.4636 4.32107 12.0464C4.17681 11.9516 4.02274 11.8012 3.61085 11.3894C3.19896 10.9775 3.0486 10.8234 2.95385 10.6791C2.53661 10.0438 2.54561 9.18863 3.00507 8.51227C3.10993 8.35791 3.27224 8.19244 3.69924 7.76544L4.31796 7.14672ZM9.62172 6.08558C9.81698 5.89032 9.81698 5.57373 9.62172 5.37847C9.42646 5.18321 9.10988 5.18321 8.91461 5.37847L5.37908 8.91401C5.18382 9.10927 5.18382 9.42585 5.37908 9.62111C5.57434 9.81637 5.89092 9.81637 6.08619 9.62111L9.62172 6.08558Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>'
-        },
-        link: 'https://links.monerokon.org/'
       }
     ],
 
