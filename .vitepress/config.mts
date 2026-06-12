@@ -22,7 +22,7 @@ export default defineConfig({
           { text: 'IRC', link: 'https://web.libera.chat/?nick=Guest?#monero-events' },
           { text: 'Matrix', link: 'https://matrix.to/#/#monerokon:matrix.org' },
           { text: 'XMPP', link: 'xmpp:monerokon@muc.xmpp.is?join' },
-          { text: 'Simplex', link: 'https://simplex.chat/contact#/?v=1-2&smp=smp%3A%2F%2Fu2dS9sG8nMNURyZwqASV4yROM28Er0luVTx5X1CsMrU%3D%40smp4.simplex.im%2F1OXnPP15cK8HAJ3YM_7UfQhlW-9WFE8P%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAHf0AClqIM2SnOJ7OP06pr7UXlcnzGaBUyx3MLmRP0ko%253D%26srv%3Do5vmywmrnaxalvz6wi3zicyftgio6psuvyniis6gco6bp6ekl4cqj4id.onion&data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%22CIdAO_gOEDOsW9oZrtAHiA%3D%3D%22%7D' },
+          { text: 'Simplex', link: 'https://simplex.chat/contact#/?v=2-4&smp=smp%3A%2F%2Fhpq7_4gGJiilmz5Rf-CswuU5kZGkm_zOIooSw6yALRg%3D%40smp5.simplex.im%2FIE3ZKT3daRLKdQg1nSXK4U1cUK4A81XQ%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAN2vLBKKQiTG58nokhiBIpqvLTyfeyey6UbaFGy4cYH8%253D%26srv%3Djjbyvoemxysm7qxap7m5d5m35jzv5qq6gnlv7s4rsn7tdwwmuqciwpid.onion&data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%227LTn4BEWw4bD9Gs8snVEJA%3D%3D%22%7D' },
           { text: 'Mastodon', link: 'https://mas.to/@monerokon' },
           { text: 'RSS Feed', link: '/blog/rss.xml' },
           { text: 'X', link: 'https://x.com/monerokon' },
