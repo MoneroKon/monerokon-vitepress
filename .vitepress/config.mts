@@ -16,9 +16,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       {
         text: 'Community', items: [
-          { text: 'Nextcloud Talk', link: 'https://nextcloud.4lice.com/call/y4iugjt2' },
-          { text: 'Message Board', link: 'https://nextcloud.4lice.com/apps/forum' },
-          { text: 'Volunteer', link: 'https://engel.4lice.com/angeltypes/about' },
           { text: 'IRC', link: 'https://web.libera.chat/?nick=Guest?#monero-events' },
           { text: 'Matrix', link: 'https://matrix.to/#/#monerokon:matrix.org' },
           { text: 'XMPP', link: 'xmpp:monerokon@muc.xmpp.is?join' },
