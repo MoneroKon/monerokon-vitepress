@@ -30,16 +30,16 @@ export default {
                             autonomy and digital rights.
                         </p>
                         <br>
-                        <p><span class="thicc">Date: </span>TBD</p>
-                        <p><span class="thicc">Location: </span>TBD</p>
+                        <p><span class="thicc">Date: </span>9-11 July 2027</p>
+                        <p><span class="thicc">Location: </span>Krakow, Poland</p>
                     </div>
                 </div>
                 <div style="min-height: 15em">
-                    <l-map style="z-index: 0" ref="map" v-model:zoom="zoom" :center="[52.23141325165129, 21.00647994224071]"
+                    <l-map style="z-index: 0" ref="map" v-model:zoom="zoom" :center="[50.045214, 19.936632]"
                         :use-global-leaflet="false">
                         <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"
                             name="OpenStreetMap" :attribution="attribution"></l-tile-layer>
-                        <l-marker :lat-lng="[52.23141325165129, 21.00647994224071]" />
+                        <l-marker :lat-lng="[50.045214, 19.936632]" />
                     </l-map>
                 </div>
             </div>
