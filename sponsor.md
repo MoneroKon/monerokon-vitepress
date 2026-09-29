@@ -67,9 +67,9 @@ To showcase your company or project at MoneroKon 2027, contact us at [sponsors@m
 <td></td>
 </tr>
 <tr>
-<td>$3,499*</td>
-<td>$8,499</td>
-<td>$14,999</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>TBD</td>
 </tr>
 </tbody>
 </table>

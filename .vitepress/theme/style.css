@@ -136,7 +136,7 @@
 :root {
   --vp-nav-logo-height: 44px;
 
-  --vp-c-bg: #f7f7d5;
+  --vp-c-bg: #edeee9;
   --vp-c-bg-alt: #fff;
   --vp-c-bg-elv: #ffffff;
   --vp-c-bg-soft: #f6f6f7;
@@ -165,7 +165,7 @@
 }
 
 .dark {
-  --vp-c-bg: #1d1d1b;
+  --vp-c-bg: #1a1a1a;
   --vp-c-bg-alt: #000;
   --vp-c-bg-elv: #002b36;
   --vp-c-bg-soft: #002b36;
