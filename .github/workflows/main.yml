@@ -12,53 +12,45 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
-      # - uses: pnpm/action-setup@v3 # Uncomment this block if you're using pnpm
-      #   with:
-      #     version: 9 # Not needed if you've set "packageManager" in package.json
-      # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
+          fetch-depth: 0 # Full history needed for lastUpdated timestamps
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
-          cache: npm # or pnpm / yarn
+          node-version: 24
+          cache: npm
       - name: Install dependencies
-        run: npm ci # or pnpm install / yarn install / bun install
+        run: npm ci
       - name: Build with VitePress
-        run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+        run: npm run docs:build
       - name: Upload artifact for deployment
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: vitepress-dist
           path: .vitepress/dist
           include-hidden-files: true
           retention-days: 1
 
-  # Deployment job
   deploy:
     needs: build
     runs-on: ubuntu-latest
     name: Deploy to BunnyCDN
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: vitepress-dist
           path: dist
-      
+
       - name: Deploy to BunnyCDN
-        uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
+        uses: ayeressian/bunnycdn-storage-deploy@v2.4.5
         with:
           source: "dist"
-          # Uncomment and set a destination folder if needed
-          # destination: "www"
           storageZoneName: "${{ secrets.STORAGE_NAME }}"
           storagePassword: "${{ secrets.STORAGE_PASSWORD }}"
           accessKey: "${{ secrets.STORAGE_KEY }}"
