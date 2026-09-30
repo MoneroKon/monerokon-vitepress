@@ -26,11 +26,12 @@ const logo = { dark: "/mklight-title-logo.svg", light: "/mkdark-title-logo.svg",
 <style scoped>
 .herogrid {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
 }
 
 @media (min-width: 960px) {
     .herogrid {
-        grid-template-columns: 1.1fr 1fr;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
         gap: 3em;
         margin: 0 auto;
         max-width: 1152px;
@@ -55,7 +56,7 @@ const logo = { dark: "/mklight-title-logo.svg", light: "/mkdark-title-logo.svg",
 
     .hero {
         margin-bottom: 1em;
-        padding: 24px 48px;
+        padding: 24px;
     }
 
     .hero-text {
@@ -72,8 +73,9 @@ const logo = { dark: "/mklight-title-logo.svg", light: "/mkdark-title-logo.svg",
 .hero-text {
     font-weight: 100;
     letter-spacing: -4px;
-    font-size: 52px;
+    font-size: clamp(24px, 8.5vw, 52px);
     line-height: 1;
+    overflow-wrap: anywhere;
 }
 
 .bold {

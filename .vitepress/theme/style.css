@@ -202,3 +202,25 @@
 .VPImage.sponsor-logo {
   min-width: 128px;
 }
+
+/* Squeeze the nav bar between the VitePress tablet (768px) and desktop
+ * (960px) breakpoints, where the full menu doesn't otherwise fit. */
+@media (min-width: 768px) and (max-width: 959px) {
+  :root {
+    --vp-nav-logo-height: 36px;
+  }
+
+  .VPNavBar .wrapper {
+    padding: 0 16px;
+  }
+
+  .VPNavBarMenu .VPNavBarMenuLink,
+  .VPNavBarMenu .VPNavBarMenuGroup .button {
+    padding: 0 7px;
+    font-size: 13px;
+  }
+
+  .VPNavBarMenu .VPNavBarMenuGroup .button .text {
+    font-size: 13px;
+  }
+}
